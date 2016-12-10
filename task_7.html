@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>task seven</title>
+	<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}	
+body{
+	font-size: 12px;
+	font-family: "宋体";
+	color: #aaaaaa;
+}
+/* 主要结构 */
+.wrapper{
+	width: 1280px;
+	margin: 0 auto;
+	border-bottom: 1px solid #000;
+}
+/* header */
+.top{
+	position: relative;
+	width: 1280px;
+	height: 55px;
+	background-color: #fff;
+	line-height: 52px;
+	
+}
+.top .top_l{
+	position: absolute;
+	left: 60px;
+	top: 0;
+
+}
+.top  .newworld{
+
+	font-family: "黑体";
+	font-size: 21px;
+	color: #393a3a;
+}
+.top .top_l img{
+	position: relative;
+	top: 10px;
+}
+.top_r{
+	position: absolute;
+	right: 60px;
+	top: 0;
+}
+.top_r li{
+	float: left;
+	display: block;
+	list-style: none;
+	
+}
+.top_r li .item{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #787b83;
+	text-decoration: none;
+	padding: 18px;
+}
+.top_r li{
+	
+}
+.top_r .item:hover{
+	color: #e74f4d;
+	border-bottom: 3px solid #e74f4d;
+}
+.top_r  li:nth-child(6){
+    background-image: url("images/task7_2.png");
+    background-repeat: no-repeat;
+    background-position: 0px 16px;
+
+}
+.top_r  li:nth-child(6) .item{
+	color: #e74f4d;
+}
+/* main */
+  /* feature */
+.feature{
+	position: relative;
+	background-image: url(images/task7_3.jpg);
+	background-repeat: no-repeat;
+	height: 950px;
+}
+.f_middle{
+	position: absolute;
+	top: 165px;
+	left: 110px;
+}
+.f_middle h1{
+	color: #fff;
+	font-size: 60px;
+	font-family: "微软雅黑";
+}
+.f_middle p{
+	color: #fffdfd;
+	font-size: 21px;
+	font-family: "微软雅黑";
+}
+.f_middle a{
+	margin-top: 66px;
+	display: block;
+	width: 330px;
+	height: 65px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	background: #e74f4d;
+	text-align: center;
+	padding-top: 18px;
+	font-family: "微软雅黑";
+}
+.f_bottom{
+	position: absolute;
+	bottom: 25px;
+	height: 250px;
+}
+.f_bottom_item{
+	position: relative;
+	float: left;
+	width: 320px;
+	height: 250px;
+	background-image:url(images/feature1.png); 
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: 130px 45px;
+}
+.f_bottom_item p{	
+	position: absolute;
+	bottom: 45px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #767777;
+	width: 154px;
+	padding-right: 90px;
+	padding-left: 70px;
+	border-right: 3px solid #767777;
+	height: 55px;
+}
+.f_bottom_item p.none{
+	border: none;
+}
+  /* about */
+.about{
+	height: 695px;
+	background-color: #ececec;
+}
+.about p{
+	text-align: center;
+	font-family: "黑体";
+	font-size: 54px;
+	color: #8f8f8f;
+}
+.a_top{
+	padding-bottom: 66px;
+}
+.a_top_img{
+	margin-top:90px;
+	margin-bottom: 36px;
+}
+.a_bottom{
+	width: 1280px;
+	height: 340px;
+	background-image:url(images/about2.jpg);
+	background-repeat: no-repeat; 
+	text-align: center;
+}
+.a_bottom_text p{
+	text-align: center;
+}
+.a_bottom_text p:nth-child(1){
+	padding-top: 52px;
+	font-size: 21px;
+	font-family: "微软雅黑";
+	color: #fff;	
+}
+.a_bottom_text hr{
+	margin: 10px auto 20px auto;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	
+}
+.a_bottom_text .p3{
+	color: #ece7e5;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.a_bottom_city{
+	position: relative;
+	margin-top: 50px;
+	display: inline-block;
+
+}
+.a_bottom_city .set{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #a8aaaa;
+	width: 234px;
+	height: 34px;
+	padding-left: 10px;
+	border: none;
+	background-image:url(images/about3.jpg);
+	background-repeat: no-repeat;
+	background-position: 220px 8px; 
+}
+.a_bottom_city .set:hover{
+	border: 1px solid #be4e48;
+}
+.list{
+	position: absolute;
+	left: 251px;
+	text-align: left;
+
+}
+.list li{
+	list-style: none;
+	display: block;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #777878;
+	width: 221px;
+	height: 22px;
+	padding-left: 22px;
+	padding-top: 8px;
+	border: none;
+	background-color: #e3e2e4;
+
+}
+.list li:hover{
+	color: #fff;
+	background-color: #be4e48;
+	background-image:url(images/nike.png);
+	background-repeat: no-repeat;
+	background-position: 5px 12px; 
+}
+.setonly{
+	display: inline-block;
+	word-spacing: 20px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #fff;
+	background-color: #be4e48;
+	width: 234px;
+	height: 34px;
+	text-align: center;
+	border: none;
+	line-height: 34px;
+	text-decoration: none;
+}
+  /* show world */
+.show-world{
+	height:600px;
+	background-color:#f8f7f7;
+	text-align:center;
+}
+.show-center{
+	display:inline-block;
+
+}
+.show-box{
+	float:left;
+	margin-top:100px;
+	margin-right:37px;
+	position:relative;
+	height:390px;
+	width:218px;
+}
+.show-box img{
+	padding:6px;
+	background-color:#fff;
+	border:1px solid #dadada;
+	border-bottom:none;
+}
+.show-box img.show-box-only{
+	border-bottom:1px solid #dadada;
+}
+.show-box figcaption{
+	text-align:center;
+}
+.show-box figcaption h2{
+	font-size:14px;
+	color:#323333;
+	padding:14px 0 10px 0;
+}
+.show-box figcaption h2.h2only{
+	display:inline-block;
+	letter-spacing:23px;
+	font-size:21px;
+	padding-top:0;
+}
+.ponly{
+	padding-bottom:10px;
+}
+  /* time */
+.time{
+	height: 565px;
+	position: relative;
+}
+.time-l{
+	padding-top: 130px;
+	background-image:url(images/time-l.jpg);
+	background-repeat: no-repeat; 
+	text-align: center;
+	height: 565px;
+	width: 850px;
+}
+.time-l-text{
+	display: inline-block;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+.time-l-text h2{
+	font-size: 50px;
+	font-weight: normal;
+	
+}
+.time-l-text h1{
+	font-size: 158px;
+	line-height: 80%;
+	padding-bottom: 35px;
+}
+.time-l-text p{
+	font-size: 22px;
+}
+.time-l:after{
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 50%;
+	right: 430px;
+	border-width:15px 30px 15px 0;
+	border-style:solid;
+	border-color:transparent #fff transparent transparent;   
+
+}
+.time-r{
+	height: 565px;
+	width: 430px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+.time-r-box{
+	display: inline-block;
+	margin-top: 168px;
+}
+.time-r-box h2{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	padding-bottom: 15px;
+	color: #000;
+	
+}
+.time-r-box h2 span{
+	color: #f3a8a6;
+	padding-left: 10px;
+	font-weight: normal;
+}
+.time-r-box h2 i{
+	color:  #bbbbbb;
+}
+.time-r-box p{
+	width: 284px;
+	line-height: 30px;
+	color: #bbbbbb;
+	text-align: left;
+}
+.time-r-button{
+	display: block;
+	margin: 33px auto 30px auto;
+	width: 106px;
+	height: 34px;
+	border: 2px solid #e5676a;
+	text-decoration: none;
+	text-align: center;
+	line-height: 34px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #e25c60;
+}
+.time-r-button:hover{
+	color: #fff;
+	background-color: #e25c60;
+}
+.change{
+	display: block;
+	width: 106px;
+	margin: 0 auto;
+}
+.change li{
+	display: inline-block;
+	float: left;
+	margin-left: 18px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border: 1px solid #bbbbbb;
+}
+.change li:hover{
+	background-color: #bbbbbb;
+}
+.change li:first-child{
+	background-color: #bbbbbb;
+}
+  /* more */
+.more{
+	width: 1280px;
+	height: 521px;
+}
+.more-box{
+	float: left;
+	width: 424px;
+	height: 521px;
+	text-align: center;
+	background-color: #e7504d;
+}
+.two{
+	background-color: #fff;
+	display: inline-block;
+	margin-top:170px;
+	width: 170px;
+}
+.more-box-text{
+	display: inline-block;
+	margin-top:170px;
+	width: 170px;
+	
+}
+.two p{
+	color: #000;
+	font-size: 21px;
+	font-family: "黑体";
+}
+.more-box-text p{
+	color: #fff;
+	font-size: 21px;
+	font-family: "黑体";
+}
+.more-box-text hr{
+	margin:25px auto;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+}
+.two hr{
+	margin:25px auto;
+	width: 30px;
+	height: 2px;
+	background-color: #bbbbbb;
+}
+.b_2{
+	color: #fff;
+	border-color: #fff;
+}
+.b_2:hover{
+	background-color: #fff;
+	color: #000;
+	border-color: #000;
+}
+.box2{
+	background-color:#fff; 
+}
+.more img{
+	float: left;
+}
+	/* form */
+.form{
+	clear: both;
+	overflow: hidden;
+	width: 1280px;
+	height: 750px;
+	text-align: center;
+}
+.form-top{
+	margin-top:120px; 	
+}
+.form-top h2{
+	font-size: 21px;
+	color: #323333;
+	font-family: "黑体";
+}
+.form-top hr{
+	margin:5px auto;
+	width: 30px;
+	height: 2px;
+	background-color: #e7504d;
+}
+.form-top p{
+	color: #aaaaaa;
+	line-height: 18px;
+	padding-bottom: 100px;
+}
+.form-bottom{
+	display: inline-block;
+	width: 1000px;
+	
+}
+.form-bottom-l{
+	float: left;
+	text-align: left;
+	width: 290px;
+}
+.form-bottom-l h3{
+	clear: both;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #231815;
+	padding-bottom:25px; 
+}
+.form-bottom-l p{
+	color: #231815;
+	line-height: 24px;
+	color: #bbbbbb;
+}
+.form-bottom-l .m{
+	float: right;
+	width: 45px;
+	margin-top: -5px;
+	text-align: right;
+}
+.form-bottom-l .m a{
+	text-decoration: none;
+}
+.form-bottom-r{
+	float: right;
+	width: 640px;
+}
+.form-box div{
+	background-color: #ededee;
+	color: #231815;
+	font-size: 12px;
+	text-align: left;
+	line-height: 38px;
+}
+.form-box div input{
+	border: none;
+	background-color: #ededee;
+}
+.form-box div label{
+	margin-left: 10px;
+}
+.form-box-l{
+	float: left;
+	width: 310px;
+	height: 38px;
+	margin-bottom: 14px;
+
+}
+.form-box-r{
+	float: right;
+	width: 310px;
+	height: 38px;
+	margin-bottom: 14px;
+}
+.textarea{
+	clear: both;
+	width: 100%;
+	height: 120px;
+}
+.form-box a{
+	display: block;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	background-color: #ededee;
+	margin-top: 14px;
+	text-decoration: none;
+}
+/* footer */
+.footer-box{
+	position: relative;
+	text-align: center;
+	width: 1280px;
+	background-color: #32363e;
+}
+.footer-text h2{
+	padding-top: 90px;
+	margin-bottom: 10px;
+	font-size: 21px;
+	color: #fff;
+	font-family: "黑体";
+}
+.footer-text p{
+	color: #fff;
+	line-height: 18px;
+	margin-bottom: 30px;
+}
+.footer-box input{
+	width: 430px;
+	height: 40px;
+}
+.email{
+	display: inline-block;
+	width:516px;
+	height: 40px;
+	padding-bottom: 136px;
+	
+}
+.footer-box .email a{
+	text-decoration: none;
+	color: #fff;
+	float: right;
+	
+	display: block;
+	width: 82px;
+	height: 44px;
+	line-height: 40px;
+	background-color: #6f7178;
+}
+.footer-bottom{
+	position: absolute;
+	bottom: 0;
+	width: 1280px;
+	height: 40px;
+	background-color: #2f2f38;
+	line-height: 40px;
+}
+.footer-bottom-l{
+	float: left;
+	margin-left: 80px;
+}
+.footer-bottom-r{
+
+	float: right;
+	margin-right: 80px;
+}
+.footer-bottom-r a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-text ul li{
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+
+.footer-text ul{
+	position: relative;
+	top: 100px;
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="top">
+				<div class="top_l">
+					<img src="images/task7_1.png" alt="logo1"/>
+					<span class="newworld">新世界</span>
+				</div>
+				
+				<ul class="top_r">
+					<li><a class="item" href="#">首页</a></li>
+					<li><a class="item" href="#">最新活动</a></li>
+					<li><a class="item" href="#">项目介绍</a></li>
+					<li><a class="item" href="#">爱心社区</a></li>
+					<li><a class="item" href="#">关于我们</a></li>
+					<li><a class="item" href="#">登陆</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="feature">
+				<div class="f_middle">
+					<h1>Time of new life</h1>
+					<p>新时代，年轻的人们让我们一起
+					<br/>体验新生活，享受新生活</p>
+					<a href="#">开始体验</a>
+				</div>
+				<div class="f_bottom">
+					<div class="f_bottom_item">
+						<p>打造全新世界观，让你更爱你的生活</p>
+					</div>
+					<div class="f_bottom_item"><p>丰富多彩的公益活动，发挥新世界的主人公意识</p></div>
+					<div class="f_bottom_item"><p>时尚的新理念，超前体验未知的生活</p></div>
+					<div class="f_bottom_item"><p class="none">完善的培养机制，培养你全新的世界观</p></div>
+				</div>
+			</div>
+			<div class="about">
+				<div class="a_top">
+					<p><img class="a_top_img" src="images/about1.png"/></p>
+					<p>关于新世界，你不知道的还有什么？</p>
+				</div>
+				<div class="a_bottom">
+					<div class="a_bottom_text">
+						<p>查找新世界城市活动信息</p>
+						<hr class="hr">
+						<p class="p3">每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+					</div>
+					<div class="a_bottom_city">
+						<input class="set" type="text" placeholder="中国"/>
+						<input class="set" type="text" placeholder="省份"/>
+						<input class="set" type="text" placeholder="城市"/>
+						<a href="#" class="setonly">搜   索</a>
+						<ul class="list">
+							<li>北京市</li>
+							<li>天津市</li>
+							<li>河北市</li>
+							<li>陕西市</li>
+							<li>内蒙古自治区</li>
+							<li>辽宁省</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <div class="show-world">
+            	<div class="show-center">
+					<figure class="show-box">
+                	<figcaption>
+                    	<img src="images/show.jpg"/>
+						<h2>北京活动</h2>
+                    	<p>新社区大联盟</p>
+                    </figcaption>
+                </figure>
+                <figure class="show-box">
+                	<figcaption>	                   
+						<h2 class="h2only">北京活动</h2>
+                    	<p class="ponly">新社区大联盟</p>
+                        <img class="show-box-only" src="images/show.jpg"/>
+                    </figcaption>
+                </figure>
+                <figure class="show-box">
+                	<figcaption>
+						<img src="images/show.jpg"/>
+                        <h2>北京活动</h2>
+                    	<p>新社区大联盟</p>
+                    </figcaption>
+                </figure>
+                <figure class="show-box">
+                	<figcaption>
+						<img src="images/show.jpg"/>
+                        <h2>北京活动</h2>
+                    	<p>新社区大联盟</p>
+                    </figcaption>
+                </figure>                
+                </div>
+            </div>
+            <div class="time">
+            	<div class="time-l">
+                	<div class="time-l-text">
+                    	<h2>新世界</h2>
+                    	<h1>TIME</h1>
+                    	<p>@新世界－北京
+                    	<br>2016.04.01</p>
+                    </div>
+                </div>
+                <div class="time-r">
+                	<div class="time-r-box">
+                		<h2>新世界<i>/</i><span>01</span></h2>
+                		<p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                		<a class="time-r-button" href="#">更多详情</a>
+                		<ul class="change">
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                		</ul>
+                	</div>
+                </div>
+            </div>
+            <div class="more">
+            	<div class="more-box">
+            		<div class="more-box-text">
+            			<p>新时代<br>关于爱生活的我们</p>
+						<hr class="hr">
+						<a class="time-r-button b_2" href="#">更多详情</a>
+            		</div>
+            	</div>
+            	<div class="more-box box2">
+            		<div class="two">
+            			<p>新时代<br>关于爱生活的我们</p>
+						<hr class="hr">
+						<a class="time-r-button" href="#">更多详情</a>
+            		</div>
+            	</div>
+            	<img src="images/more.jpg"/>
+            </div>
+            <div class="form">
+            	<div class="form-top">
+            		<h2>成为我们的志愿者</h2>
+            		<hr>
+            		<p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br>那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p>
+            	</div>
+            	<div class="form-bottom">
+            		<div class="form-bottom-l">
+            			<h3>新世界志愿者协议</h3>
+            			<p>加入新世界志愿者的人员必须遵守中华人民共共和国的<br>相关法律法规，并且本着平等资源的原则 ......</p>
+            			<p class="m"><a href="#"><img src="images/nike2.png"> more</a></p>
+            			<h3>新世界志愿者权利</h3>
+            			<p>新世界志愿者享受新世界内部所有资源共享的权利，并<br>且享受所在四新世界活动的优先参与资格</p>
+            			<p class="m"><a href="#"><img src="images/nike2.png"> more</a></p>
+            			<h3>更多条款</h3>
+            			<p class="m"><a href="#"><img src="images/nike2.png"> more</a></p>
+            		</div>
+            		<div class="form-bottom-r">
+            			<form>
+            				<div class="form-box">
+            					<div class="form-box-l">
+            						<label>姓名：<input type="text"></label>
+            					</div>
+            					<div class="form-box-r">
+            						<label>姓名：<input type="text"></label>
+            					</div>
+            					<div class="form-box-l">
+            						<label>姓名：<input type="text"></label>
+            					</div>
+            					<div class="form-box-r">
+            						<label>姓名：<input type="text"></label>
+            					</div>
+            					<div class="textarea">
+            						请简单描述您梦想的生活
+            					</div>
+            					<a href="#">提交</a>
+            				</div>
+            			</form>
+            		</div>
+            	</div>
+            </div>
+		</main>
+		<footer>
+			<div class="footer-box">
+				<div class="footer-text">
+					<h2>联系我们</h2>
+					<p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下任何方式关注我们动态</p>
+					<ul>
+						<li><img src="images/footer1.png"></li>
+						<li><img src="images/footer2.png"></li>
+						<li><img src="images/footer3.png"></li>
+						<li><img src="images/footer4.png"></li>
+					</ul>
+				</div>
+				<p class="email"><input type="text" placeholder="someone@email.com"><a href="#">提交</a></p>
+				
+				<div class="footer-bottom">
+					<span class="footer-bottom-l">@2016新世界</span>
+					<span class="footer-bottom-r"><a href="#">Back to top</a></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

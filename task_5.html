@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task_1</title>
+	<style type="text/css">
+		body{
+			 background-color: rgb(222, 222, 222);
+ 			 margin: 0;
+ 			 padding: 0;
+  			 font-size: 18px;
+ 			 font-family: "Microsoft Yahei";
+		}
+		/* 头部 */
+		.top{
+			background-color: rgb(51,51,51);
+			width: 100%;
+			overflow: auto;
+		}
+		.top img{
+			float: left;
+			margin-left: 2em;
+		}
+		.top ul{
+			float: right;
+		}
+		.top ul li{
+			float: left;
+			margin: 0 1.5em;
+			list-style: none;
+		}
+		.top a:link {
+   color: #fff;
+	-webkit-transition:all 0.3s linear;
+}
+
+.top a:visited {
+    color: rgb(255, 0, 0);
+}
+
+.top a:hover {
+    	color: #001212;
+	-webkit-transition:all 0.2s linear;
+}
+
+.top a:active {
+    color: rgb(0, 0, 255);
+}
+
+main {
+   
+}
+/*  main */
+.left{
+	
+
+	
+}
+.main{
+	margin-right: 360px;
+}
+.article{
+	width: 90%;
+	margin: 30px auto;
+	background-color: rgb(255, 255, 255);
+	padding: 1em;
+	border-bottom: 2px solid rgb(132, 132, 132);
+    border-right: 2px solid rgb(132, 132, 132);
+}
+.asidebar{
+	position: fixed;
+	top:60px;
+	right: 0;
+	width: 20%;
+	margin: 30px auto;
+	background-color: rgb(255, 255, 255);
+	padding: 1.5em;
+	border-bottom: 2px solid rgb(132, 132, 132);
+    border-right: 2px solid rgb(132, 132, 132);
+    min-width: 300px;
+}
+.article h1,
+.sidebar h1 {
+    font-size: 24px;
+}
+
+.article h2 {
+    font-size: 21px;
+    color: rgb(100, 100, 100);
+}
+
+.article span {
+    font-size: 16px;
+    color: gray;
+    margin-right: 10px;
+}
+.article p{
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+.imgborder{
+	text-align: center;
+}
+li.none{
+	list-style-type: none;
+}
+.article .imgB{
+	width: 180px;
+	border: 1px solid gray;
+	padding: 30px;
+	text-align: center;
+	margin: 30px auto;
+}
+.article .imgB img{
+	width: 180px;
+	margin-top: 20px;
+}
+.table{
+	width: 100%;
+
+}
+.table caption{
+	caption-side: top;	
+}
+.table,
+.table th,
+.table td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+.table thead{
+	background-color: black;
+	color: white;
+	text-align: left;
+}
+.table tfoot {
+    background-color: gray;
+}
+
+.table tfoot td {
+    border: 0 solid red;
+}
+
+.table a {
+    text-decoration: none;
+}
+.asidebar form{
+	line-height: 1.5em;
+}
+.asidebar form table {
+   font-size: 12px;
+}
+.asidebar form table tr td:first-child{
+	text-align: right;
+	vertical-align: top;
+        margin-right: 20px;
+   
+}
+.asidebar form input[type="text"]{
+	width: 80%;
+}
+.asidebar form input[type="submit"]{
+	border-radius: 10px;
+	width: 100%;
+	margin: 30px auto;
+	height: 3em;
+
+}
+.textarea textarea{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	 height: 70px;
+    line-height: 70px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+	</style>
+</head>
+<body>
+	<header class="top">
+		<img src="images/baidu_logo.png" alt="logo"/>
+		<nav>
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="left">
+			<article class="article" id="article1">
+			<h1>文章一</h1>
+			<h2>文章副标题</h2>
+			<p><span>作者</span><span>时间</span></p>
+			<p>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。换行了。 </p>
+			<p>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。<a href="#"> 百度前端技术学院 </a>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。<strong>粗体字 </strong>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。</p>
+			<p class="imgborder"><img src="images/1.jpg" alt="logo1"/></p>
+		</article>
+		<article class="article"  id="article2">
+			<h1>文章一</h1>
+			<h2>文章副标题</h2>
+			<p><span>作者</span><span>时间</span></p>
+			<p>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。换行了。</p>
+			<p>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。<a href="#"> 百度前端技术学院 </a>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。<strong>粗体字 </strong>这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。这是一个很长的段落。</p>
+			<p class="imgborder"><img src="images/2.jpg" alt="logo2"/></p>
+			<ul>
+				<li class="none">列表项目1</li>
+				<li class="none">列表项目2</li>
+				<li class="none">列表项目3</li>
+			</ul>
+		</article>
+		<article class="article" id="article3">
+			<h1>图片</h1>
+			<figure class="imgB">
+				<figcaption>好看的图片</figcation>
+				<img src="images/2.jpg" alt="logo2"/>
+			</figure>
+			<figure class="imgB">
+				<figcaption>好看的图片</figcation>
+				<img src="images/2.jpg" alt="logo2"/>
+			</figure>
+			<figure class="imgB">
+				<figcaption>好看的图片</figcation>
+				<img src="images/2.jpg" alt="logo2"/>
+			</figure>
+			<figure class="imgB">
+				<figcaption>好看的图片</figcation>
+				<img src="images/2.jpg" alt="logo2"/>
+			</figure>
+			<figure class="imgB">
+				<figcaption>好看的图片</figcation>
+				<img src="images/2.jpg" alt="logo2"/>
+			</figure>
+		</article>
+		<article class="article" id="article4">
+			<h1>最后一篇文章</h1>
+			<h2>文章副标题</h2>
+			<p><span>作者</span><span>时间</span></p>
+			<ol>
+				<li class="none">列表项目1</li>
+				<li class="none">列表项目2</li>
+				<li class="none">列表项目3</li>
+			</ol>
+			<table class="table">
+				<caption>下面是一个表格</caption>
+				<thead>
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td><strong>总计</strong></td>
+						<td colspan="2"><strong>1000</strong></td>
+					</tr>
+				</tfoot>
+			</table>
+		</article>
+		</div>
+		<aside class="asidebar">
+			<h1>这是侧边栏</h1>
+			<form>
+				<table>
+					<tr>
+						<td><p>请输入邮件地址</p></td>
+						<td><input type="text" placeholder="这是一个文本输入框"></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>邮箱地址请按要求填写</td>
+					</tr>
+					<tr>
+						<td>请输入密码</td>
+						<td><input type="password" ></input></td>
+					</tr>
+					<tr>
+						<td>请重复输入密码</td>
+						<td><input type="password" ></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>密码请为6到16位英文数字</td>
+					</tr>
+					<tr>
+						<td>性别</td>
+						<td>
+							<input type="radio" >男</input>
+							<input type="radio" >女</input>
+						</td>
+					</tr>
+					<tr>
+						<td>城市</td>
+						<td>
+							<select>
+								<option value="0">北京</option>
+								<option value="1">北京</option>
+								<option value="2">北京</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>爱好</td>
+						<td>
+							<input type="checkbox" >运动</input>
+							<input type="checkbox" >科学</input>
+							<input type="checkbox" >艺术</input>
+						</td>
+					</tr>
+					<tr>
+						<td>个人描述</td>
+						<td class="textarea"><textarea placeholder="请输入你的个人描述" ></textarea></td>
+					</tr>
+				</table>
+				<p><input type="submit" ></input></p>
+			</form>
+		</aside>
+	</main>
+	<footer class="footer">
+		 版权所有&copy 
+	</footer>
+</body>
+</html>

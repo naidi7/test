@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				font-family: "Segoe UI", Segoe, Calibri, Arial, sans-serif;
+
+			}
+			.box{
+				position: relative;
+				margin: 10px auto;
+				width: 640px;
+				height: 970px;			
+				background-color: #33ccff;
+				
+			}
+			.box-content{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+				margin-top: 20px;
+				width: 510px;
+				height: 850px;	
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+				background-color: #fff;
+				padding: 40px;
+			}
+			.header-img{
+				display: inline-block;
+				float: left;
+			}
+			.header-img img{
+				width: 100px;
+				height: 150px;
+				border: 2px solid #3399ff;
+				padding: 2px;
+			}
+			.right-top{
+				position: absolute;
+				right: -25px;
+				top: -20px;
+				border-color: transparent #3399ff  transparent transparent;
+				border-style: solid;
+				border-width: 0px 180px 180px 0;
+				width: 0;
+				height: 0;
+				
+			}
+			.left-bottom{
+				position: absolute;
+				left: -25px;
+				bottom: -20px;
+				border-color: transparent transparent transparent #3399ff;
+				border-style: solid;
+				border-width: 180px 0px 0px 180px;
+				width: 0;
+				height: 0;
+			}
+			.personal-resume{
+				position: absolute;
+				right: -10px;
+				top: 0px;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: bold;	
+				font-family: Georgia, "Times New Roman", Times, serif;
+				text-align: right;				
+			}
+			.top-text{
+				float: left;
+				width: 350px;
+				display: inline-block;
+				height: 150px;
+				margin-left: 20px;
+			}
+
+			.top-text p{
+				font-size: 28px;
+				color: #33ccff;
+				font-weight: bold;
+
+			}
+			.top-text .a{
+				display: inline-block;
+				width: 170px;
+				height: 50px;
+				line-height: 90px;
+				font-size: 15px;
+				color: #708090;
+				font-weight: bold;
+			}
+			.top-text .b{
+				font-size: 12px;
+				
+				color: #696969;
+			}
+			.top-text span.a:nth-child(odd){
+				margin-left: -15px;
+			}
+			.header:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.title-main{
+				background-color: #F0FFFF;
+				margin-top: 10px;
+				border-left: 5px solid #3399ff;
+				text-indent: 5px;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.title-main span{
+				color: #33ccff;
+			}
+			.main-text{
+				font-size: 14px;
+				line-height: 1.7em;
+				font-family: "微软雅黑";
+				padding-left: 75px;
+			}
+			.main-text .text-right{
+				float: right;
+				display: block;
+				font-weight: bold;
+			}
+			.clearfl{
+				clear: both;
+			}
+			.num{
+				color: #33ccff;
+			}
+			.hobby{
+				text-indent: 240px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box-content">
+				<div class="right-top"></div>
+				<div class="left-bottom"></div>
+				<span class="personal-resume">PERSONAL<br>RESUME</span>
+				<div class="header">
+					<div class="header-img">
+						<img src="images/2105816875.jpg">
+					</div>
+					<div class="top-text">
+						<p>姓名  :  林俊标</p>
+						<span class="a">出生年月:<span class="b">&nbsp&nbsp&nbsp&nbsp19960212</span></span>
+						<span class="a">现居地:<span class="b">&nbsp&nbsp&nbsp&nbsp&nbsp深圳市福田区</span></span>
+						<span class="a">手机:<span class="b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp13622360785</span></span>
+						<span class="a">邮箱:<span class="b">&nbsp&nbsp&nbsp493624053@qq.com</span></span>
+					</div>
+				</div>
+				<p class="title-main">求职意向:&nbsp&nbsp&nbsp<span>Web前端开发实习生</span></p>
+				<p class="title-main">教育背景:</p>
+				<div class="main-text">
+					<span class="text-right">2014~2017</span>
+					<p class="clearfl">深圳职业技术学院&nbsp&nbsp计算机信息管理专业&nbsp&nbsp&nbsp大专&nbsp&nbsp&nbsp</p>
+					<p>曾获年级成绩排名第一，多次获得校内奖学金</p>
+					<p>参加第五届“C语言程序设计大赛”获得特等奖</p>
+					<span class="text-right">主修课程</span>
+					<p class="clearfl">C语言程序设计(<span class="num">97</span>),数据结构(<span class="num">91</span>),数据库原理与应用(<span class="num">91</span>)</p>
+					<p>面向对象程序设计C#(<span class="num">99</span>),大型数据库SQL Server(<span class="num">93</span>)</p>
+					<p>网页设计与制作技术(<span class="num">97</span>)，动态web技术ASP.NET(<span class="num">96</span>)</p>
+					<p>Oracle数据库基础及PL/SQL语言(<span class="num">99</span>), 动态Web技术PHP(<span class="num">95</span>)</p>
+				</div>
+				<p class="title-main">个人技能:</p>
+				<div class="main-text">
+					<p>专业能力  考取oracle公司认证的ＯＣＡ证书</p>
+					<p>前端技术 使用开发工具sublime text ,熟练掌握HTML+CSS，<br>熟悉HTML5，CSS3,JQuery，Bootstrap，javascript，Ajax,scss,响应式开发页面。
+					快速根据psd设计稿重构成html静态页面。
+					</p>
+				</div>
+				<p class="title-main">项目经验</p>
+				<div class="main-text">
+					写过简单的个人博客页面，利用Div+css进行布局，php代码进行读取用户信息，与存储用户，更新用户和删除用户等信息，mysql语句进行简单查询，与模糊查询。与随机显示图片的功能<br>
+					写过一个asp.net开发的海贼王页面，利用了css3做了一些简单的动画，用原生js写了简单的滑动门效果.还用了sprite雪碧图.用了Session存储了总访问人数与当前访问人数。
+				</div>
+				<p class="title-main">自我评价:</p>
+				<div class="main-text">本人勤奋认真，做事热情积极，有较强的责任心。环境适应能力强，能很快适应新的工作环境。具备团队合作意识，善于协调团队中的人际关系。热爱IT行业，喜欢WEB前端开发，遇到困难总会迎难而上，能用各种可能途径解决问题。具有较强的自学能力和学习能力，对工作认真积极。可以加班。<br><b class="hobby">兴趣爱好~</b><span class="text-right">喜欢阅读，爱打篮球</span></div>
+			</div>
+		</div>
+	</body>
+</html>

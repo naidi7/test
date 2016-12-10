@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			width: 100%;
+		}
+		ul,li{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#header{
+			width: 100%;
+			line-height: 60px;
+			background-color:#91D4DA;
+		}
+		#header p{
+			text-align: center;
+
+		}
+		#header p a{
+			text-decoration: none;
+			float: left;
+			display: inline-block;
+			width: 60px;
+			background-image:url(images/left-arrow.png);
+			background-position: 0 20px;
+			background-repeat: no-repeat;
+			color: #fff;
+		}
+		.main{
+			max-width: 40%;
+			margin: 0 auto;
+			overflow: hidden;
+			padding-bottom: 100px;
+		}
+		.img-auto{
+			width: 100%;
+		}
+		.nav{
+			width: 100%;
+		}
+		.nav li{
+			display: inline-block;
+			width: 19.3%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			color: #656565;
+		
+		}
+		.nav li:hover{
+			height: 56px;
+			border-bottom: 4px solid #91D4DA;
+		}
+		.items{
+			width: 100%;
+		}
+		.items li{
+			text-align: center;
+			width: 19.3%;
+			display: inline-block;
+		}
+		.items li figure{
+			position: relative;
+			margin: 20% auto;
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+			background-color: #00C7D6;
+		}
+		.items li figure img{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		.items li p{
+			text-align: center;
+		}
+		.items:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.cols{
+			margin-top: 30px;
+			width: 100%;
+			height: 200px;
+			display: block;
+		}
+		.cols li{
+			width: 32.3%;
+			display: inline-block;
+			height: 100%;
+		}
+		.cols li figure{
+			position: relative;
+			display: block;
+			height: 60%;
+		}
+		.cols li img{
+			width: 60%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0;
+			bottom: 0;
+			margin: 0 auto;
+		}
+		.cols h2{
+			font-size: 18px;
+			text-align: center;
+		}
+		.cols h3{
+			margin-top: 10px;
+			font-size: 14px;
+			color: #5B5B5B;
+			text-align: center;
+		}
+		.article-header{
+			height: 60px;
+			line-height: 60px;
+			font-size: 16px;
+			border-bottom: 1px solid #aaaaaa;
+			margin-bottom: 15px;
+		}
+		#article1 img{
+			float: left;
+			width: 30%;
+			border:1px solid #FEB832;
+		}
+		#article1 img:last-child:before{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		#article1 ul{
+			float: left;
+			width: 67%;			
+			display: block;
+			margin-left: 10px;
+		}
+		#article1 ul li{
+			width: 49.3%;
+			height: 64px;
+			line-height: 64px;
+			background-color: #aaaaaa;
+			display: inline-block;
+			text-align: center;
+		}
+		#article1 ul li:nth-child(4){
+			margin-top: 15px;
+		}
+		article:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.section2{
+			margin-top: 10px;
+			height:150px;
+		}
+		.articles article{
+			margin-top: 10px;
+			border-bottom: 1px solid #aaa;
+			padding-bottom: 10px;
+		}
+		.articles article:last-child{
+			border-bottom: none;
+		}
+		.articles article img{
+			width: 33%;
+			float: left;
+		}
+		.articles article section{
+			position: relative;
+			margin-left: 10px;
+			width: 64%;
+			float: left;
+			height: 115px;
+		}
+		.articles article section header{
+			font-size: 25px;
+			color: #bbbbbb;
+
+		}
+		.articles article section aside{
+			font-size: 14px;
+			color: #aaa;
+			position: absolute;
+			bottom: 0;
+		}
+		.articles article section ul{
+			width: 100%;
+		}
+		.articles article section ul li{
+			display: inline-block;
+			width: 32%;
+		}
+		#section3{
+			width: 96%;
+		}
+		#section3 img{
+			width: 100%;
+			
+		}
+		#section3 aside{
+			display: block;
+			position: relative;
+			
+		}
+	</style>
+</head>
+<body>
+	<header id='header'>
+		<p><a href="#">返回</a></span>这是标题</p>
+	</header>
+	<div class="main">
+		<main>
+		<ul class="nav">
+			<li>导航</li>
+			<li>导航</li>
+			<li>导航</li>
+			<li>导航</li>
+			<li>导航</li>
+		</ul>
+		<img class="img-auto" src="images/bear-figure.png">
+		<ul class="items">
+			<li>
+				<figure>
+					<img src="images/doc.png">
+				</figure>
+				<p>标签</p>
+			</li>
+			<li>
+				<figure>
+					<img src="images/doc.png">
+				</figure>
+				<p>标签</p>
+			</li>
+			<li>
+				<figure>
+					<img src="images/doc.png">
+				</figure>
+				<p>标签</p>
+			</li>
+			<li>
+				<figure>
+					<img src="images/doc.png">
+				</figure>
+				<p>标签</p>
+			</li>
+			<li>
+				<figure>
+					<img src="images/doc.png">
+				</figure>
+				<p>标签</p>
+			</li>
+		</ul>
+		<ul class="cols">
+			<li>
+				<figure>
+					<img src="images/bear-column-1.png">
+				</figure>				
+				<h2>分栏一</h2>
+				<h3>分栏小标题</h3>
+			</li>
+			<li>
+				<figure>
+					<img src="images/bear-column-2.png">
+				</figure>				
+				<h2>分栏二</h2>
+				<h3>分栏小标题</h3>
+			</li>
+			<li>
+				<figure>
+					<img src="images/bear-column-3.png">
+				</figure>				
+				<h2>分栏三</h2>
+				<h3>分栏小标题</h3>
+			</li>
+		</ul>
+		<header class="article-header">模块一</header>
+		<article id="article1">
+			<div class="section2">
+				<img src="images/bear-avatar.png">
+				<section>
+					<ul>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+					</ul>
+				</section>
+			</div>
+			<div class="section2">
+				<img src="images/bear-avatar.png">
+				<section>
+					<ul>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+					</ul>
+				</section>
+			</div>
+		</article>
+		<header class="article-header">模块二</header>
+		<article id="article1">
+			<div class="section2">
+				<img src="images/bear-avatar.png">
+				<section>
+					<ul>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+					</ul>
+				</section>
+			</div>
+			<div class="section2">
+				<img src="images/bear-avatar.png">
+				<section>
+					<ul>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+						<li>这是文案</li>
+					</ul>
+				</section>
+			</div>
+		</article>
+		<div class="articles">
+			<article>
+				<img src="images/bear-article.png">
+				<section>
+					<header>这是文章标题字号是22的文章标题</header>
+					<aside>文章来源 6分钟前</aside>
+				</section>
+			</article>
+			 <article>
+		        <img src="images/bear-article.png" alt="article" />
+		        <section>
+		            <header>这是另一个文章标题</header>
+		            <aside>文章来源 6分钟前</aside>
+		        </section>
+	        </article>
+	        <article>
+	            <section id="section3">
+		            <header>这个也是文章标题字号是22的文章标题</header>
+		            <ul class="imgs">
+		              <li><img src="images/bear-article.png" alt="article" /></li>
+		              <li><img src="images/bear-article.png" alt="article" /></li>
+		              <li><img src="images/bear-article.png" alt="article" /></li>
+		            </ul>
+		            <aside>文章来源 7分钟前</aside>
+		        </section>
+	        </article>
+		</div>
+	</main>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1118 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			a:link{
+				color: #fff;
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				background-color: #2189bf;
+				height: 56px;
+			}
+			.header img{
+				float: left;
+				margin: 10px 0 10px 40px;
+			}
+			.header .search-bar{
+				float: right;
+				margin: 13px 70px 13px 20px;
+			
+			}
+			.header .search-bar input{
+				border-radius: 15px ;
+				border-style: none;
+				height: 30px;
+				width: 310px;
+				background-image: url(images/search-logo.png);
+				background-position: 16px 8px;
+				background-repeat: no-repeat;
+				margin-right: 20px;
+			}
+			.header .search-bar span{
+				padding-left: 20px;
+				background-image: url(images/login-logo.png);
+				background-position: 0px 0px;
+				background-repeat: no-repeat;
+			}
+			.container{
+				position: relative;
+
+			}
+			.aside{
+				height: 1220px;
+				width: 260px;
+				background-color: #2b2e3d;
+				
+			}
+			.aside-center{
+				
+			}
+			.aside .aside-top{
+				height: 150px;
+				
+				font-size: 16px;
+				font-family: "黑体";
+				padding-left: 40px;
+
+			}
+			.aside .aside-top p{
+				padding-top: 15px;
+				padding-bottom: 5px;
+			}
+			.aside .aside-top .img{
+				
+				float: left;
+				margin-right: 15px;
+				width: 56px;
+				height: 56px;
+				border-radius: 56px;
+				border: 1px solid #b9babd; 
+			}
+			.aside .aside-top .img div{
+				margin-left: 10%;
+				margin-top: 10%;
+				width: 80%;
+				height: 80%;
+				border-radius: 80%;
+				background-color: #b9babd; 
+			}
+			.aside .aside-top h2{
+				line-height: 56px;
+				color: #f6f5f5;
+				font-size: 16px;
+			
+			}
+			.aside .aside-top h2:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.aside .aside-top span{
+				display:inline-block;
+				text-align: center;
+				width: 35px;
+				border-right: 2px solid #313545;
+				padding-right: 30px;
+				color: #6e8095;
+			}
+			.aside .aside-top span:last-child{
+				
+				padding-left: 30px;
+				border-right: none;
+
+			}
+			.aside .aside-middle{
+				color: #6e8095;
+				font-size: 12px;
+				font-family: "黑体";
+			}
+			.aside .aside-middle li.icon{
+				
+				padding-left: 40px;	
+				line-height: 40px;	
+				margin-bottom: 20px;
+				
+			}
+			li{
+				list-style: none;
+			}
+			.aside .aside-middle li.icon:first-child{
+				display: block;
+				background-color: #383d4e;
+				color: #fff;
+				padding-top: 10px;
+				padding-bottom: 15px;
+			}
+			.aside .aside-middle li.icon:nth-child(2){
+				margin-top: -20px;
+			}
+			.aside .aside-middle li:first-child li{
+				line-height: 30px;
+				margin: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			.aside .aside-middle li i{
+				display: inline-block;
+				background-image:url(images/aside-item.png);
+				background-repeat: no-repeat; 
+				width: 15px;
+				height: 15px;
+				padding-right: 5px;
+
+			}
+			.aside .aside-middle li:hover{
+				background-color:#383d4e;
+				color: #fff;
+			}
+			.aside .aside-middle li.icon:first-child i{
+				background-position: -6px 1px;
+			}			
+			.aside .aside-middle li.icon:nth-child(2) i{
+				background-position: -6px -104px;
+			}			
+			.aside .aside-middle li.icon:nth-child(3) i{
+				background-position: -6px -121px;
+			}			
+			.aside .aside-middle li.icon:nth-child(4) i{
+				background-position: -6px -104px;
+			}			
+			.aside .aside-middle li.icon:nth-child(5) i{
+				background-position: -6px -104px;
+			}			
+			.aside .aside-middle li.icon:nth-child(6) i{
+				background-position: -24px 1px;
+			}
+			.aside .aside-middle .second-ul{
+				padding-left: 15px;
+			}
+			.aside .aside-middle .third-ul{
+				padding-left: 30px;
+			}
+			.second-ul li:hover{
+				color: #fff;
+			}
+			.aside .aside-middle .second-ul li.file:first-child{
+				color: #6e8095;
+			}
+			.aside .aside-middle .second-ul li.file:last-child{
+				color: #6e8095;
+			}
+			.aside .aside-middle .second-ul li.file i{
+				margin-right: 5px;
+			}
+			.aside .aside-middle .second-ul li.file:first-child i{
+				background-position: -1px -64px;
+			}
+			.aside .aside-middle .second-ul li.file:nth-child(2) i{
+				background-position: -1px -83px;
+			}
+			.aside .aside-middle .second-ul li.file:last-child i{
+				background-position: -1px -64px;
+			}
+			.aside .aside-middle .second-ul li.file:first-child:before{
+				content: "";
+				display: inline-block;
+				background-image:url(images/aside-item.png);
+				background-repeat: no-repeat; 
+				background-position: -1px -15px;
+				width: 15px;
+				height: 15px;
+				padding-right: 5px;
+			}
+			.aside .aside-middle .second-ul li.file:last-child:before{
+				content: "";
+				display: inline-block;
+				background-image:url(images/aside-item.png);
+				background-repeat: no-repeat; 
+				background-position: -1px -15px;
+				width: 15px;
+				height: 15px;
+				padding-right: 5px;
+			}
+			.aside .aside-middle .second-ul li.file:nth-child(2):before{
+				content: "";
+				display: inline-block;
+				background-image:url(images/aside-item.png);
+				background-repeat: no-repeat; 
+				background-position: -1px -45px;
+				width: 15px;
+				height: 15px;
+				padding-right: 5px;
+			}
+			.aside .aside-middle .second-ul .third-ul li:last-child{
+				color: #6e8095;
+				background-position: -20px -15px;
+			}
+			.main{
+				background-color: #eeedec;
+				width: 1089px;
+				position: absolute;
+				right: 0;
+				top:0;
+
+			}
+			.main_top{
+				height: 30px;
+				background-color: #fff;
+				color: #aaaaaa;
+				font-family: "黑体";
+				font-size: 13px;
+				line-height: 30px;
+				padding-left: 20px;
+			}
+			.main_top span{
+				color: #6898c2;
+			}
+			.main_bottom{
+				padding: 20px 70px 0 60px;
+			}
+			.main_bottom_top1{
+				background-color: #fff;
+				border: 1px solid #dddee0;
+				width: 870px;
+				height: 84px;
+				color:#aaaaaa;
+				font-family: "黑体";
+				font-size: 13px;
+				margin-bottom: 10px;
+			}
+			.main_bottom_top1_one{
+
+				position: relative;
+				float: left;
+				width: 125px;
+				height: 56px;
+				margin-right: 30px;
+				margin-top: 15px;
+				margin-left: 30px;
+				color:#aaaaaa;
+				padding-bottom: 10px;
+			}
+			.main_bottom_top1_one span{
+				border: 1px solid #cbcbcb;
+				width: 70px;
+				display: inline-block;
+				text-align: center;
+				height: 25px;
+				line-height: 25px;
+				color: #323333;
+				background-image: url(images/nike_blue.png);
+				background-position: 56px 11px;
+				background-repeat: no-repeat;
+			}
+			.main_bottom_top1_one ul{
+				display: none;
+				position: absolute;
+				top:25px;
+				right: 7px;
+
+			}
+			.main_bottom_top1_one ul li{
+				display: block;
+				border: 1px solid #cbcbcb;
+				width: 70px;
+				text-align: center;
+				height: 25px;
+				line-height: 25px;
+				color: #323333;
+			}
+			.main_bottom_top1_two{
+				position: relative;
+				float: left;
+				width: 212px;
+				height: 56px;	
+				margin-right: 30px;
+				margin-top: 15px;
+			}
+			.main_bottom_top1_two p{
+				margin-top: 2px;
+				height: 24px;
+				line-height: 24px;
+				color:#aaaaaa;
+			}
+			.main_bottom_top1_two  ul{
+				display: none;
+				
+			}
+			.main_bottom_top1_two span{
+				display: inline-block;
+				border: 1px solid #cbcbcb;
+				width: 120px;
+				height: 22px;
+				line-height: 22px;
+				padding-left: 8px;
+				color: #323333;
+				margin-left: 16px;
+			}
+			.main_bottom_top1_two ul li{
+				border: 1px solid #cbcbcb;
+				width: 120px;
+				height: 22px;
+				line-height: 22px;
+				padding-left: 8px;
+				color: #323333;
+				
+			}
+			.main_bottom_top1_two b{
+				float: right;
+				position: absolute;
+				top:5px;
+				right: -2px;
+				width: 35px;
+				height: 37px;
+				background-image: url(images/change.png);
+				background-position: -1px 0;
+				background-repeat: no-repeat;
+				line-height: 37px;
+				text-align: center;
+				color: #fff;
+			}
+			.main_bottom_top1_three{
+				float: left;
+				width: 300px;
+				height: 56px;
+				margin-right: 30px;
+				margin-top: 15px;
+				color: #aaaaaa;
+			}
+			.main_bottom_top1_three .border{
+				border: 1px solid #cbcbcb;
+				display: inline-block;
+				height: 22px;
+				line-height: 22px;
+				padding-left: 8px;
+				color: #323333;
+				padding-right: 30px;
+				margin-left: 15px;
+				margin-right: 10px;
+			}
+			.main_bottom_top1_three p{
+				margin-bottom: 2px;
+			}
+			.main_bottom_top1_three p .nike{
+				background-image: url(images/nike_blue.png);
+				background-position: 38px 8px;
+				background-repeat: no-repeat;
+			}
+			.main_bottom_top1_three p .span-last{
+				width: 58px;
+			}
+			.main_bottom_top1 .input{
+				display: inline-block;
+				background-color: #388ac1;
+				border: none;
+				width: 40px;
+				height: 24px;
+				line-height: 24px;
+				border-radius: 2px;
+				margin-top:32px;
+				color: #fff;
+				text-align: center;
+			}
+			.main_bottom_top1:after{
+				content: "";
+				clear:both;
+				display: block;
+			}
+			.main_bottom_top2{
+				height: 64px;
+				margin-bottom: 20px;
+			}
+			.main_bottom_top2 ul li{
+				float: left;
+				margin-left: 4px;
+				display: inline-block;
+				width: 106px;
+				height: 62px;
+				border-left: 1px solid #cacdd0;
+				border-top: 1px solid #cacdd0;
+				background-color: #fff;
+				color: #323333;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+			.main_bottom_top2 ul li span{
+				display: inline-block;
+				padding-top: 10px;
+			}
+			.main_bottom_top2 ul li:hover{
+				border-top: 3px solid #4388c8;
+			}
+			.main_bottom_top2 ul li:last-child{
+				margin-right: 4px;
+			}
+			.main_bottom_top2 ul li b{
+				color: #ec6500;
+				font-size: 21px;
+			}
+			.main_bottom_top2 .nike-left{
+				border-left: 1px solid #cacdd0;
+				border-top: 1px solid #cacdd0;
+				background-color: #fff;
+				width: 28px;
+				height: 62px;
+				display: inline-block;
+				float: left;
+				font-size: 25px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 62px;
+			}
+			.main_bottom_top2 .history{
+				width: 138px;
+				border-left: 1px solid #cacdd0;
+				border-top: 1px solid #cacdd0;
+				background-color: #fff;
+				display: inline-block;
+				float: left;
+				margin-left: 4px;
+				color: #535353;
+				height: 62px;
+				font-size: 12px;
+				text-indent: 60px;
+				line-height: 62px;
+				background-image: url(images/history.png);
+				background-repeat: no-repeat;
+				background-position: 20px 15px;
+			}
+			.main_bottom_top2:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.main_bottom_top3 p{
+				font-size: 12px;
+				color: #323333;
+				font-family: "微软雅黑";
+				padding-bottom: 5px;
+			}
+			.main_bottom_top3 ul li{
+				display: inline-block;
+				float: left;
+				margin-right: 24px;
+				width: 195px;
+				height: 68px;
+				border: 1px solid #cacdd0;
+				background-color: #fff;
+			}
+			.main_bottom_top3 ul li span{
+				float: left;
+				font-size: 12px;
+				color: #323333;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.main_bottom_top3 ul li span strong{
+				color: #aaaaaa;
+				font-size: 10px;
+				font-weight: normal;
+				
+			}
+			.main_bottom_top3 ul li:nth-child(1){
+				border-left: 4px solid #43b29d;
+			}
+			.main_bottom_top3 ul li:nth-child(1) b{
+				float: right;
+				display: inline-block;
+				width: 60px;
+				height: 45px;
+				background-color: #43b29d;
+				margin-top: 12px;
+				margin-right: 18px;
+			}
+			.main_bottom_top3 ul li:nth-child(2){
+				border-left: 4px solid #388ac1;
+			}
+			.main_bottom_top3 ul li:nth-child(2) b{
+				float: right;
+				display: inline-block;
+				width: 60px;
+				height: 45px;
+				background-color: #388ac1;
+				margin-top: 12px;
+				margin-right: 18px;
+			}
+			.main_bottom_top3 ul li:nth-child(3){
+				border-left: 4px solid #cf4a36;
+			}
+			.main_bottom_top3 ul li:nth-child(3) b{
+				float: right;
+				display: inline-block;
+				width: 60px;
+				height: 45px;
+				background-color: #cf4a36;
+				margin-top: 12px;
+				margin-right: 18px;
+			}
+			.main_bottom_top3 ul li:nth-child(4){
+				border-left: 4px solid #e2cd46;
+			}
+			.main_bottom_top3 ul li:nth-child(4) b{
+				float: right;
+				display: inline-block;
+				width: 60px;
+				height: 45px;
+				background-color: #e2cd46;
+				margin-top: 12px;
+				margin-right: 18px;
+			}
+			.table-border{
+				border: 1px solid #d0d2d5;
+				border-radius: 10px;
+				background-color: #fff;
+			}
+			.table-border p{
+				background-color: #f4f5f6;
+				color: #aaaaaa;
+				border-radius: 10px 10px 0 0;
+				font-size: 12px;
+				padding-left: 20px;
+				font-family: "黑体";
+				height: 40px;
+				line-height: 40px;
+			}
+			.main_bottom_top4:before{
+				content: "";
+				clear: both;
+				display: block;
+				margin-bottom: 15px;
+			}
+			.main_bottom_top4_left{
+				float: left;
+				width: 515px;
+				height: 352px;
+			}
+			.main_bottom_top4_left .table-wrap{
+				position: relative;
+				overflow: hidden;
+				height: 310px;
+			}
+		
+			.main_bottom_top4_left ul{
+				position: absolute;
+				top: 10px;
+				left: 20px;
+				z-index: 999;
+			}
+			.main_bottom_top4_left ul li{
+				border-radius: 5px 5px 0 0;
+				display: inline-block;
+				text-align: center;
+				float: left;
+				width: 84px;
+				height: 26px;
+				line-height: 26px;
+				font-size: 12px;
+				background-color: #f4f5f6;
+				margin-right: 4px;
+			}
+			.main_bottom_top4_left ul li:first-child{
+				background-color: #fff;
+				border: 1px solid #d0d2d5;
+				border-bottom: 1px solid #fff;
+			}
+			.main_bottom_top4_left ul li:hover{
+				background-color: #fff;
+				border: 1px solid #d0d2d5;
+				border-bottom: 1px solid #fff;
+			}
+			.main_bottom_top4_left ul li a{
+				color: #535353;
+				font-family: "微软雅黑";
+			}
+
+			.main_bottom_top4_left  table,tr,td{
+				border: 1px solid #d0d2d5;
+				border-collapse: collapse;
+				font-size: 12px;
+				color: #535353;
+				font-family: "宋体";
+			}
+			.main_bottom_top4_left .table{
+				position: absolute;
+				clear: both;
+				border: 1px solid #d0d2d5;
+				width: 480px;
+				height: 250px;
+				margin-top: 36px;
+				margin-left: 20px;
+			
+			
+			}
+			.main_bottom_top4_left table{
+				margin: 25px 10px 31px 20px;
+			
+			}
+			#table1{
+				z-index: 0;	
+			}
+			#table3:target{
+				z-index: 1;	
+			}
+			#table2:target{
+				z-index: 1;	
+			}
+			#table4:target{
+				z-index: 1;	
+			}
+			#table1:target{
+				z-index: 1;	
+			}
+			#table5:target{
+				z-index: 1;	
+			}
+			.main_bottom_top4_left table .active{
+				background-color: #f4f5f6;
+			}
+			.main_bottom_top4_left table td{
+				padding: 8px 18px 8px 18px;
+			}
+			.main_bottom_top4_right{
+				margin-left: 4px;
+				float: left;
+				width: 348px;
+				height: 352px;
+			}
+			.main_bottom_top4_right p{
+				margin-bottom: 14px;
+			}
+			.main_bottom_top4_right h2{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				color: #c3c2c2;
+				font-style: normal;
+				padding-left: 54px;
+			}
+			.main_bottom_top4_right b{
+				color: #535353;
+				font-weight: normal;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				padding-left: 54px;
+
+			}
+			.main_bottom_top4_right .b1{
+				display: block;
+				width: 250px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #d0d2d5;
+				padding-left: 20px;
+				margin-left: 34px;
+				padding-top: 5px;
+
+			}
+			.main_bottom_top4_right .padding20{
+
+			}
+			.main_bottom_top4_right .d1 span{
+				float: left;
+
+
+			}
+			.main_bottom_top4_right .d1 span h2{
+				padding: 0;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			.main_bottom_top4_right .d1 span b{
+				padding: 0;
+			}
+			.main_bottom_top4_right .d1 span:first-child{
+				display: inline-block;
+				margin-left: 54px;
+				width: 84px;
+				height: 45px;
+				margin-right: 10px;
+				border-right: 1px solid #d0d2d5;
+			}
+			
+			.main_bottom_top4_right .h1{
+				clear: both;
+				display: block;
+				width: 275px;
+				padding-bottom: 10px;
+				border-top: 1px solid #d0d2d5;
+				padding-left: 20px;
+				margin-left: 34px;
+				padding-top: 5px;
+				padding-right: 17px;
+			}
+			.main_bottom_top4_right_search{
+				margin-top: 90px;
+				width: 250px;	
+				border-top: 1px solid #d0d2d5;
+				padding-left: 20px;
+				margin-left: 34px;
+	
+			}
+			.main_bottom_top4_right_search .input{
+				display: inline-block;
+				background-color: #388ac1;
+				border: none;
+				width: 40px;
+				height: 24px;
+				line-height: 24px;
+				border-radius: 2px;
+				margin-left: 80px;
+				color: #fff;
+				margin-top: 10px;
+				text-align: center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<img src="images/logo.png">
+				<div class="search-bar">
+					<input type="search"></input>
+					<span><a href="#">登录</a></span>
+				</div>	
+			</div>
+		</header>
+		<div class="container">
+			<aside>
+				<div class="aside">
+					<div class="aside-center">
+						<div class="aside-top">
+						<p>
+							<div class="img">
+								<div></div>
+							</div>
+							<h2>ABC123</h2>
+						</p>
+						<span>110收藏</span><span>313粉丝</span>
+						</div>
+						<ul class="aside-middle">
+							<li class="icon"><i></i>个人报表
+								<ul class="second-ul">
+									<li class="file"><i></i>文件一</li>
+									<li class="file"><i></i>文件二
+										<ul class="third-ul">
+											<li><i></i>文档一</li>
+											<li><i></i>文档二</li>
+										</ul>
+									</li>
+									<li class="file"><i></i>文件三</li>
+
+								</ul>
+							</li>
+							<li class="icon"><i></i>个人收藏</li>
+							<li class="icon"><i></i>我的分享</li>
+							<li class="icon"><i></i>图库</li>
+							<li class="icon"><i></i>成长记录</li>
+							<li class="icon"><i></i>账户信息</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<main>
+				<div class="main">
+					<p class="main_top">
+					      C站  / 个人报表 / 文件一 / <span>文档一</span>
+					</p>
+					<div class="main_bottom">
+						<div class="main_bottom_top1">
+							<div class="main_bottom_top1_one">
+								查询项 <a href="#"><span>第一项</span></a>
+								<ul>
+									<li>第一项</li>
+									<li>第二项</li>
+									<li>第三项</li>
+								</ul>
+							</div>
+							<div class="main_bottom_top1_two">
+									买方<span>小A</span>
+									<ul>
+										<li>小A</li>
+										<li>小B</li>
+										<li>小C</li>
+									</ul>
+								<b>换</b>
+								<p>
+									卖方<span>小A</span>
+									<ul>
+										<li>小A</li>
+										<li>小B</li>
+										<li>小C</li>
+									</ul>
+								</p>
+							</div>
+							<div class="main_bottom_top1_three">
+								<p>
+									日期<span class="border">2016-04-01</span>
+									总耗时<span class="border nike">8天</span>
+								</p>
+								<p>
+									人数<span class="border nike">10人</span>
+									成交项<span class="border nike span-last">10项</span>
+								</p>
+							</div>
+							<a class="input" href="#">搜索</a>
+						</div>
+						<div class="main_bottom_top2">
+							<a class="nike-left" href="#">&lsaquo;</a>
+							<ul>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+								<li><span>10:00 am<br>￥<b>1200</b></span></li>
+							</ul>
+							<a class="nike-left" href="#">&rsaquo;</a>
+							<a class="history" href="#">历史查询</a>
+						</div>
+						<div class="main_bottom_top3">
+							<p>2016年4月份统计</p>
+							<ul>
+								<li><span>133311<br><strong>成交量</strong></span><b></b></li>
+								<li><span>133311<br><strong>成交量</strong></span><b></b></li>
+								<li><span>133311<br><strong>成交量</strong></span><b></b></li>
+								<li><span>133311<br><strong>成交量</strong></span><b></b></li>
+							</ul>
+						</div>
+						<div class="main_bottom_top4">
+							<div class="main_bottom_top4_left table-border">
+								<p>第一组项目</p>
+								<div class="table-wrap">
+									<ul>
+										<li><a href="#table1">项目一</a></li>
+										<li><a href="#table2">项目二</a></li>
+										<li><a href="#table3">项目三</a></li>
+										<li><a href="#table4">项目四</a></li>
+										<li><a href="#table5">项目五</a></li>
+									</ul>
+										<div id="table1" class="table">
+											<table>
+												<tbody>
+													<tr>
+														<td class="active">购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+													</tr>
+													<tr>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+													</tr>
+													<tr>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+													</tr>
+													<tr>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+													</tr>
+													<tr>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+													</tr>
+													<tr>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="table2" class="table">
+											<table>
+												<tbody>
+													<tr>
+														<td class="active">购买材料2</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+													</tr>
+													<tr>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+													</tr>
+													<tr>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+													</tr>
+													<tr>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+													</tr>
+													<tr>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+													</tr>
+													<tr>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="table3" class="table">
+											<table>
+												<tbody>
+													<tr>
+														<td class="active">购买材料3</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+													</tr>
+													<tr>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+													</tr>
+													<tr>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+													</tr>
+													<tr>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+													</tr>
+													<tr>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+													</tr>
+													<tr>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="table4" class="table">
+											<table>
+												<tbody>
+													<tr>
+														<td class="active">购买材料4</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+													</tr>
+													<tr>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+													</tr>
+													<tr>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+													</tr>
+													<tr>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+													</tr>
+													<tr>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+													</tr>
+													<tr>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="table5" class="table">
+											<table>
+												<tbody>
+													<tr>
+														<td class="active">购买材料5</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+														<td>购买材料一</td>
+													</tr>
+													<tr>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+														<td>购买材料二</td>
+													</tr>
+													<tr>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+														<td>购买材料四</td>
+													</tr>
+													<tr>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+														<td>购买材料六</td>
+													</tr>
+													<tr>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+														<td>购买材料十三</td>
+													</tr>
+													<tr>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+														<td>购买材料二十</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+								</div>
+							</div>
+							<div class="main_bottom_top4_right table-border">
+								<div class="padding20">
+									<p>第一组项目</p>
+									<h2>标题</h2>
+									<b class="b1">项目报表三</b>
+									<div class="d1">
+										<span><h2>价格</h2><b>￥ 158</b></span><span><h2>负责人</h2><b>小A</b></span>
+									</div>
+									<h2 class="h1">详细描述</h2>
+									<b>该项目目前负责人是......</b>
+									<div class="main_bottom_top4_right_search">
+										<input type="checkbox" checked="checked">
+										<span>遵守保密协议</span>
+										<a class="input" href="#">搜索</a>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+						<div class="main_bottom_top5">
+							
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
